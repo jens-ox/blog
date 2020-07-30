@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import styles from './Icon.module.scss';
 

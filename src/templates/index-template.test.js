@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { StaticQuery, useStaticQuery } from 'gatsby';
