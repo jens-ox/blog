@@ -1,12 +1,6 @@
 import React from 'react';
-import type { Entry, WidgetFor } from '../../types';
 
-type Props = {
-  entry: Entry,
-  widgetFor: WidgetFor
-};
-
-const PagePreview = ({ entry, widgetFor }: Props) => {
+const PagePreview = ({ entry, widgetFor }) => {
   const body = widgetFor('body');
   const title = entry.getIn(['data', 'title']);
 

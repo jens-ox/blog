@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
 import Comments from './Comments';
 import siteMetadata from '../../../../jest/__fixtures__/site-metadata';
-import type { RenderCallback } from '../../../types';
 
 describe('Comments', () => {
   beforeEach(() => {
