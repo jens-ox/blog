@@ -7,7 +7,7 @@ import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 describe('Post', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(siteMetadata)
       ),
       useStaticQuery.mockReturnValue(siteMetadata)

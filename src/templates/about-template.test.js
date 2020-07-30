@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { StaticQuery, useStaticQuery } from 'gatsby';
-import IndexTemplate from './index-template';
+import AboutTemplate from './about-template';
 import siteMetadata from '../../jest/__fixtures__/site-metadata';
 import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
 import pageContext from '../../jest/__fixtures__/page-context';
 
-describe('IndexTemplate', () => {
+describe('AboutTemplate', () => {
   const props = {
     data: {
       ...allMarkdownRemark
@@ -24,7 +24,7 @@ describe('IndexTemplate', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<IndexTemplate {...props} />).toJSON();
+    const tree = renderer.create(<AboutTemplate {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

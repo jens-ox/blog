@@ -7,7 +7,7 @@ import siteMetadata from '../../jest/__fixtures__/site-metadata';
 describe('NotFoundTemplate', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(siteMetadata)
       ),
       useStaticQuery.mockReturnValue(siteMetadata)

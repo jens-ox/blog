@@ -9,7 +9,7 @@ import pageContext from '../../jest/__fixtures__/page-context';
 describe('TagTemplate', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(siteMetadata)
       ),
       useStaticQuery.mockReturnValue(siteMetadata)

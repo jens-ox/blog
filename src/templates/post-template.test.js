@@ -14,7 +14,7 @@ describe('PostTemplate', () => {
 
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(siteMetadata)
       ),
       useStaticQuery.mockReturnValue(siteMetadata)

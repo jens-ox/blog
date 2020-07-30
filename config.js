@@ -12,12 +12,16 @@ module.exports = {
   useKatex: false,
   menu: [
     {
-      label: 'Posts',
+      label: 'Hi!',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Blog',
+      path: '/blog'
+    },
+    {
+      label: 'University',
+      path: '/pages/university'
     }
   ],
   author: {
@@ -26,9 +30,9 @@ module.exports = {
     bio: 'Ideas, university materials and random stuff',
     contacts: {
       email: 'hi@jens-ox.de',
-      github: 'https://github.com/jens-ox',
-      linkedin: 'https://www.linkedin.com/in/jens-ochsenmeier-0388b68b',
-      instagram: 'https://instagram.com/jens_ox',
+      github: 'jens-ox',
+      linkedin: 'jens-ochsenmeier-0388b68b',
+      instagram: 'jens_ox',
     }
   }
 };

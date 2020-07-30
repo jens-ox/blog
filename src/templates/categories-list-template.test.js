@@ -13,7 +13,7 @@ describe('CategoriesListTemplate', () => {
 
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(props)
       ),
       useStaticQuery.mockReturnValue(props)
