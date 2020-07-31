@@ -50,7 +50,8 @@ Documenting design choices and implementation details forces you to really re-th
 ## Maintainability
 
 > maintainability is inversely proportional to the amount of time it takes a developer to make a change and the risk that change will break something
-<small>https://softwareengineering.stackexchange.com/a/134863</small>
+>
+> <small>[StackExchange: Characteristics of maintainable code](https://softwareengineering.stackexchange.com/a/134863)</small>
 
 Well-documented code is way easier to maintain.
 
