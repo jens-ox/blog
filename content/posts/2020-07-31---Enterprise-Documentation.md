@@ -102,3 +102,10 @@ Config file exported by submodules:
   }]
 }
 ```
+
+* **name**: Name of the module, visible in the overview.
+* **description**: Description of the module, visible in the overview.
+* **slug**: Used to generate static and well-defined urls.
+* **files**: Which markdown files to be included.
+* **sidebarYaml**: Optional, used to specify a certain order of the files in the sidebar (and which to put there).
+* **pages**: Use with caution, adds entries to the navbar for highly-used elements (like the design document overview).
