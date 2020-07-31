@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Jens Ochsenmeier',
     photo: '/photo.jpg',
-    bio: 'Ideas, university materials and random stuff',
+    bio: 'Minimalist working with data to optimize things',
     contacts: {
       email: 'hi@jens-ox.de',
       github: 'jens-ox',
