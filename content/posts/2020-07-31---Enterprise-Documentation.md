@@ -12,6 +12,8 @@ description: "It's well known that good documentation is just as important as th
 socialImage: "/media/image-notes.jpg"
 ---
 
+> **Note**: This project is now a work in progress! You can find it [on my GitHub](https://github.com/jens-ox/doc-spider).
+
 It's well known that good documentation is just as important as the actual code. In enterprise environments, writing good documentation is often hard - versioned docs are spread across lots of repos, centralized docs are rotting away in Confluence, because nobody will go out of its way to manually keep them up to date.
 
 In this post, I want to propose a solution for centralized documentation in multi-repo enterprise environments.
