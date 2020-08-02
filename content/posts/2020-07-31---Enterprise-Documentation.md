@@ -9,14 +9,14 @@ tags:
   - "open source"
   - "project idea"
 description: "It's well known that good documentation is just as important as the actual code. In enterprise environments, writing good documentation is often hard - versioned docs are spread across lots of repos, centralized docs are rotting away in Confluence. In this post, I want to propose a solution for centralized documentation in multi-repo enterprise environments."
-socialImage: "/media/image-2.jpg"
+socialImage: "/media/image-notes.jpg"
 ---
 
 It's well known that good documentation is just as important as the actual code. In enterprise environments, writing good documentation is often hard - versioned docs are spread across lots of repos, centralized docs are rotting away in Confluence, because nobody will go out of its way to manually keep them up to date.
 
 In this post, I want to propose a solution for centralized documentation in multi-repo enterprise environments.
 
-![Documentation Image](/media/image-2.jpg)
+![Documentation Image](/media/image-notes.jpg)
 
 # Why Care?
 
