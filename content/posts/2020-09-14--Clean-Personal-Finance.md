@@ -12,6 +12,8 @@ description: "The fact that absolutely nothing is taught in school regarding per
 socialImage: "/media/image-money.jpg"
 ---
 
+> Note: The first version of the budgeting tool developed after writing this has been published [on GitHub](https://github.com/jens-ox/budgeting). If you want to use it yourself, you can do so [here](https://simple-budget.netlify.app/).
+
 The fact that absolutely nothing is taught in school regarding personal finances always bugged me, as I consider having control over and a long-term strategy for your own money to be one of the really important things when starting to work in your first full-time position. This post outlines my pain points with existing personal finance budgeting tools ("trackers") and proposes a more flow-based approach to it.
 
 ![Finance Banner](/media/image-money.jpg)
