@@ -13,7 +13,7 @@ I currently work as a Senior Software Engineer at [Blue Yonder](https://blueyond
 
 - worked in Data Engineering for industrial robotics at [ArtiMinds Robotics](https://www.artiminds.com/),
 - worked in Data Mining for production control at [Daimler AG](https://www.daimler.com/),
-- studied computer science with a focus on mathematics at [Karlsruhe Institute of Technology](https://www.kit.edu/).
+- studied computer science with a focus on mathematics at [KIT](https://www.kit.edu/).
 
 ## Interests
 
