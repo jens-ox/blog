@@ -1,1 +1,3 @@
-simple blog, based on [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
+# Blog
+
+Torn-down version of the [Nextjs Tailwind template](https://github.com/timlrx/tailwind-nextjs-starter-blog) by Timothy Lin.
