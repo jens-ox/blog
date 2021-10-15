@@ -19,7 +19,6 @@ import remarkImgToJsx from './remark-img-to-jsx'
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeKatex from 'rehype-katex'
 import rehypePrismPlus from 'rehype-prism-plus'
 
 const root = process.cwd()
@@ -88,7 +87,6 @@ export async function getFileBySlug<T>(type: 'authors' | 'blog', slug: string | 
         ...(options.rehypePlugins ?? []),
         rehypeSlug,
         rehypeAutolinkHeadings,
-        rehypeKatex,
         [rehypePrismPlus, { ignoreMissing: true }] as Pluggable,
       ]
       return options
