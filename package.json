@@ -5,14 +5,13 @@
   "scripts": {
     "start": "next-remote-watch ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
+    "build": "next build",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.7",
     "esbuild": "^0.13.6",
@@ -52,7 +51,6 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
-    "globby": "12.0.2",
     "husky": "^7.0.2",
     "inquirer": "^8.2.0",
     "lint-staged": "^11.2.3",
