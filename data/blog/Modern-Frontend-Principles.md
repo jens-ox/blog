@@ -144,3 +144,14 @@ A lot of errors and bad practices can be catched automatically by providing some
 - Use [Husky](https://github.com/typicode/husky) to enforce linting rules before committing
 - Let [bundlesize](https://github.com/siddharthkp/bundlesize) yell at you via a GitHub action if a PR significantly increases the bundle size
 - Run all tests as PR gate in a GitHub action
+
+# Conclusion
+
+If you adhere to all the stuff listed above, your application should hopefully be
+
+- well-documented
+- minimal in the amount of code
+- adhering to modern principles of bundling
+- well-tested and stable
+
+With this, you should have yourself an application that can be nicely maintained for the time to come.
