@@ -47,7 +47,6 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 - Math display supported via [KaTeX](https://katex.org/)
 - Automatic image optimization via [next/image](https://nextjs.org/docs/basic-features/image-optimization)
 - Flexible data retrieval with [mdx-bundler](https://github.com/kentcdodds/mdx-bundler)
-- Support for tags - each unique tag will be its own page
 - Support for multiple authors
 - Blog templates
 - TOC component
@@ -128,7 +127,6 @@ Currently 7 fields are supported.
 ```
 title (required)
 date (required)
-tags (required, can be empty array)
 lastmod (optional)
 draft (optional)
 summary (optional)
@@ -144,7 +142,6 @@ Here's an example of a post's frontmatter:
 title: 'Introducing Tailwind Nexjs Starter Blog'
 date: '2021-01-12'
 lastmod: '2021-01-18'
-tags: ['next-js', 'tailwind', 'guide']
 draft: false
 summary: 'Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
