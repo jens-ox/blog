@@ -40,7 +40,10 @@ export function dateSortDesc(a: string, b: string) {
   return 0
 }
 
-export async function getFileBySlug<T>(type: 'authors' | 'blog', slug: string | string[]) {
+export async function getFileBySlug<T>(
+  type: 'authors' | 'blog' | 'pages',
+  slug: string | string[]
+) {
   const mdxPath = path.join(root, 'data', type, `${slug}.mdx`)
   const mdPath = path.join(root, 'data', type, `${slug}.md`)
   const source = fs.existsSync(mdxPath)
@@ -130,13 +133,11 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
     const source = fs.readFileSync(file, 'utf8')
     const matterFile = matter(source)
     const frontmatter = matterFile.data as AuthorFrontMatter | PostFrontMatter
-    if ('draft' in frontmatter && frontmatter.draft !== true) {
-      allFrontMatter.push({
-        ...frontmatter,
-        slug: formatSlug(fileName),
-        date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
-      })
-    }
+    allFrontMatter.push({
+      ...frontmatter,
+      slug: formatSlug(fileName),
+      date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
+    })
   })
 
   return allFrontMatter.sort((a, b) => dateSortDesc(a.date, b.date))

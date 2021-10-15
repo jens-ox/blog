@@ -32,7 +32,6 @@ const genFrontMatter = (answers) => {
   let frontMatter = dedent`---
   title: ${answers.title ? answers.title : 'Untitled'}
   date: '${date}'
-  draft: ${answers.draft === 'yes' ? true : false}
   summary: ${answers.summary ? answers.summary : ' '}
   images: []
   layout: ${answers.layout}
@@ -70,12 +69,6 @@ inquirer
       name: 'summary',
       message: 'Enter post summary:',
       type: 'input',
-    },
-    {
-      name: 'draft',
-      message: 'Set post as draft?',
-      type: 'list',
-      choices: ['yes', 'no'],
     },
     {
       name: 'layout',
