@@ -136,8 +136,8 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
     allFrontMatter.push({
       ...frontmatter,
       slug: formatSlug(fileName),
-      date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
-    })
+      date: (frontmatter as any).date ? new Date((frontmatter as any).date).toISOString() : null,
+    } as any)
   })
 
   return allFrontMatter.sort((a, b) => dateSortDesc(a.date, b.date))
