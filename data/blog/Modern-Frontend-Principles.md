@@ -2,7 +2,7 @@
 title: modern frontend principles
 date: '2021-10-15'
 slug: 'modern-frontend-principles'
-summary: ''
+summary: 'Guidelines for bringing a legacy frontend codebase up to speed in terms of maintainability and best practices'
 ---
 
 Here are some points I usually check when working with a legacy frontend codebase.
