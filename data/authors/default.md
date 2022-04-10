@@ -9,8 +9,9 @@ linkedin: https://www.linkedin.com/in/jens-ochsenmeier-0388b68b/
 github: https://github.com/jens-ox
 ---
 
-I currently work as a Senior Software Engineer at [Blue Yonder](https://blueyonder.com/), focusing on fullstack web development. Previously, I
+I currently work as a Software Engineer at [QuantCo](https://quantco.com), focusing on fullstack web development. Previously, I
 
+- worked as a Senior Software Engineer at [Blue Yonder](https://blueyonder.com/),
 - worked in Data Engineering for industrial robotics at [ArtiMinds Robotics](https://www.artiminds.com/),
 - worked in Data Mining for production control at [Daimler AG](https://www.daimler.com/),
 - studied computer science with a focus on mathematics at [KIT](https://www.kit.edu/).
