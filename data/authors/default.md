@@ -1,8 +1,8 @@
 ---
 name: Jens Ochsenmeier
 avatar: /static/images/avatar.jpg
-occupation: Senior Software Engineer
-company: Blue Yonder
+occupation: Software Engineer
+company: QuantCo
 email: hi@jens-ox.de
 twitter: https://twitter.com/jens_ox
 linkedin: https://www.linkedin.com/in/jens-ochsenmeier-0388b68b/
