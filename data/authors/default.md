@@ -1,7 +1,7 @@
 ---
 name: Jens Ochsenmeier
 avatar: /static/images/avatar.jpg
-occupation: Software Engineer
+occupation: UI Lead
 company: QuantCo
 email: hi@jens-ox.de
 twitter: https://twitter.com/jens_ox
@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/in/jens-ochsenmeier-0388b68b/
 github: https://github.com/jens-ox
 ---
 
-I currently work as a Software Engineer at [QuantCo](https://quantco.com), focusing on fullstack web development. Previously, I
+I currently lead UI development at [QuantCo](https://quantco.com). Previously, I
 
 - worked as a Senior Software Engineer at [Blue Yonder](https://blueyonder.com/),
 - worked in Data Engineering for industrial robotics at [ArtiMinds Robotics](https://www.artiminds.com/),
