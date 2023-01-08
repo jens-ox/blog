@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import NavLink from '../components/NavLink'
@@ -77,9 +76,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             <div className="flex items-center gap-2">
               {socials.map((s, i) => (
                 <div className="cursor-pointer hover:text-stone-800 dark:hover:text-stone-300" key={`socials-${i}`}>
-                  <Link href={s.link}>
-                    <FontAwesomeIcon icon={s.icon} />
-                  </Link>
+                  <a href={s.link}>
+                    <FontAwesomeIcon icon={s.icon} width={16} height={16} />
+                  </a>
                 </div>
               ))}
             </div>
