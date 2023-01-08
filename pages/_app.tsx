@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
         <footer className="border-t border-stone-200 dark:border-stone-500 py-4 mt-6 text-sm text-stone-500 dark:text-stone-400">
           <div className="flex items-center justify-between">
-            <span>2022, Jens Ochsenmeier</span>
+            <span>{new Date().getFullYear()}, Jens Ochsenmeier</span>
             <div className="flex items-center gap-2">
               {socials.map((s, i) => (
                 <div className="cursor-pointer hover:text-stone-800 dark:hover:text-stone-300" key={`socials-${i}`}>
