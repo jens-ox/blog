@@ -8,6 +8,8 @@ import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import NavLink from '../components/NavLink'
 
+import { inter } from '../utils/font'
+
 const socials = [
   {
     icon: faLinkedin,
@@ -41,6 +43,17 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className="min-h-screen">
       <Head>
         <title>Jens Ochsenmeier</title>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😊</text></svg>"
+        />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="Get insights into the quality of your JS/TS codebase" />
+        <style>{`
+          :root {
+            --font-inter: ${inter.style.fontFamily}
+          }
+        `}</style>
       </Head>
       <div className="flex flex-col justify-between min-h-screen max-w-prose mx-auto">
         <div>
