@@ -38,7 +38,6 @@ const posts = [
   }
 ]
 
-export const POSTS_PER_PAGE = 5
 export default function Blog() {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
