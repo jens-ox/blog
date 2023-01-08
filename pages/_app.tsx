@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
+import cx from 'clsx'
 import NavLink from '../components/NavLink'
 
-import { inter } from '../utils/font'
+import { inter, sourceCodePro } from '../utils/font'
 
 const socials = [
   {
@@ -39,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const strings = useMemo(() => (locale === 'en' ? EnglishStrings : GermanStrings), [locale])
   return (
-    <div className="min-h-screen">
+    <div className={cx('min-h-screen', sourceCodePro.variable)}>
       <Head>
         <title>Jens Ochsenmeier</title>
         <link

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+pre, code {
+  @apply font-mono;
+}
+
 .token.prolog,
 .token.doctype,
 .token.cdata {

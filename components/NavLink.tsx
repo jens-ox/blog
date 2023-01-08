@@ -1,7 +1,7 @@
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 import { PropsWithChildren } from 'react'
-import cx from 'classnames'
+import cx from 'clsx'
 
 interface NavLinkProps extends LinkProps {
   text: string
