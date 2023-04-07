@@ -40,6 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 href="https://www.linkedin.com/in/jens-ox"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="LinkedIn link"
               >
                 <LinkedinIcon width={16} height={16} />
               </a>
@@ -48,6 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 href="https://github.com/jens-ox"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="GitHub link"
               >
                 <GithubIcon width={16} height={16} />
               </a>
