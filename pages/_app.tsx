@@ -31,12 +31,12 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </div>
         </div>
-        <footer className="border-t border-slate-200 p-4 mt-6 text-sm text-slate-500">
+        <footer className="border-t border-slate-200 px-4 mt-6 text-sm text-slate-500">
           <div className="flex items-center justify-between">
             <span>{new Date().getFullYear()}, Jens Ochsenmeier</span>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center">
               <a
-                className="cursor-pointer hover:text-slate-800"
+                className="cursor-pointer hover:text-slate-800 p-4"
                 href="https://www.linkedin.com/in/jens-ox"
                 target="_blank"
                 rel="noreferrer"
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <LinkedinIcon width={16} height={16} />
               </a>
               <a
-                className="cursor-pointer hover:text-slate-800"
+                className="cursor-pointer hover:text-slate-800 p-4"
                 href="https://github.com/jens-ox"
                 target="_blank"
                 rel="noreferrer"
