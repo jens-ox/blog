@@ -1,23 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import cx from 'clsx'
 
+import { GithubIcon, LinkedinIcon } from 'lucide-react'
 import { inter, sourceCodePro } from '../utils/font'
 import { NavBar } from '../components/Navbar'
-
-const socials = [
-  {
-    icon: faLinkedin,
-    link: 'https://www.linkedin.com/in/jens-ox'
-  },
-  {
-    icon: faGithub,
-    link: 'https://github.com/jens-ox'
-  }
-]
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -47,13 +35,22 @@ function MyApp({ Component, pageProps }: AppProps) {
           <div className="flex items-center justify-between">
             <span>{new Date().getFullYear()}, Jens Ochsenmeier</span>
             <div className="flex items-center gap-2">
-              {socials.map((s, i) => (
-                <div className="cursor-pointer hover:text-slate-800" key={`socials-${i}`}>
-                  <a href={s.link}>
-                    <FontAwesomeIcon icon={s.icon} width={16} height={16} />
-                  </a>
-                </div>
-              ))}
+              <a
+                className="cursor-pointer hover:text-slate-800"
+                href="https://www.linkedin.com/in/jens-ox"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinIcon width={16} height={16} />
+              </a>
+              <a
+                className="cursor-pointer hover:text-slate-800"
+                href="https://github.com/jens-ox"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GithubIcon width={16} height={16} />
+              </a>
             </div>
           </div>
         </footer>
