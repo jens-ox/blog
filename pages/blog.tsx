@@ -50,8 +50,8 @@ export default function Blog() {
   return (
     <div className="not-prose">
       <div className="divide-y">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className="pb-8 space-y-2 md:space-y-5">
+          <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-slate-900 sm:leading-10 md:leading-14">
             All Posts
           </h1>
           <div className="relative max-w-lg">
@@ -60,10 +60,10 @@ export default function Blog() {
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search posts"
-              className="block w-full px-4 py-2 rounded-lg dark:bg-white/5 bg-black/5 focus:ring-1 dark:focus:ring-white/50 focus:ring-black/50 focus:outline-none"
+              className="block w-full px-4 py-2 rounded-lg bg-black/5 focus:ring-1 focus:ring-black/50 focus:outline-none"
             />
             <svg
-              className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
+              className="absolute w-5 h-5 text-slate-400 right-3 top-3"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -85,19 +85,19 @@ export default function Blog() {
               <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                 <dl>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="text-base font-medium leading-6 text-slate-500">
                     <time dateTime={date}>{date}</time>
                   </dd>
                 </dl>
                 <div className="space-y-3 xl:col-span-3">
                   <div>
                     <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                      <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100 no-underline">
+                      <Link href={`/blog/${slug}`} className="text-slate-900 no-underline">
                         {title}
                       </Link>
                     </h3>
                   </div>
-                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">{summary}</div>
+                  <div className="prose text-slate-500 max-w-none">{summary}</div>
                 </div>
               </article>
             </div>

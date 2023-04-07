@@ -10,15 +10,16 @@ interface NavLinkProps extends LinkProps {
 const NavLink: React.FC<PropsWithChildren<NavLinkProps>> = ({ href, text, ...linkProps }) => {
   const router = useRouter()
 
+  const isActive = router.asPath === href
+
   return (
     <Link
       href={href}
       className={cx(
-        'relative rounded-full px-4 py-1 transition duration-100',
-        router.asPath === href
-          ? 'font-bold cursor-default'
-          : 'hover:bg-stone-200 dark:hover:bg-stone-700 cursor-pointer'
+        isActive ? 'bg-slate-900 text-white' : 'text-slate-300 hover:bg-slate-700 hover:text-white',
+        'rounded-md px-3 py-2 text-sm font-medium'
       )}
+      aria-current={isActive ? 'page' : undefined}
       {...linkProps}
     >
       <span className="font-bold opacity-0" aria-hidden={true}>
