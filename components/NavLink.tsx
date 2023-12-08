@@ -25,7 +25,7 @@ const NavLink: React.FC<PropsWithChildren<NavLinkProps>> = ({ href, text, ...lin
       <span className="font-bold opacity-0" aria-hidden={true}>
         {text}
       </span>
-      <div className="absolute w-full h-full top-0 left-0 flex items-center justify-center">
+      <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
         <span className={cx(router.asPath === href ? 'font-bold' : 'font-normal')}>{text}</span>
       </div>
     </Link>

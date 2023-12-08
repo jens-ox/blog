@@ -1,8 +1,9 @@
-import { Inter, Source_Code_Pro } from 'next/font/google'
+import { Atkinson_Hyperlegible, Source_Code_Pro } from 'next/font/google'
 
-export const inter = Inter({
+export const sans = Atkinson_Hyperlegible({
   subsets: ['latin'],
-  variable: '--font-inter'
+  variable: '--font-sans',
+  weight: ['400', '700']
 })
 
 export const sourceCodePro = Source_Code_Pro({

@@ -4,7 +4,7 @@ import Head from 'next/head'
 import cx from 'clsx'
 
 import { GithubIcon, LinkedinIcon } from 'lucide-react'
-import { inter, sourceCodePro } from '../utils/font'
+import { sans, sourceCodePro } from '../utils/font'
 import { NavBar } from '../components/Navbar'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -20,23 +20,23 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Get insights into the quality of your JS/TS codebase" />
         <style>{`
           :root {
-            --font-inter: ${inter.style.fontFamily}
+            --font-sans: ${sans.style.fontFamily}
           }
         `}</style>
       </Head>
-      <div className="flex flex-col justify-between min-h-screen max-w-prose mx-auto">
+      <div className="mx-auto flex min-h-screen max-w-prose flex-col justify-between">
         <div>
           <NavBar />
-          <div className="prose py-12 px-4">
+          <div className="prose px-4 py-12">
             <Component {...pageProps} />
           </div>
         </div>
-        <footer className="border-t border-slate-200 px-4 mt-6 text-sm text-slate-500">
+        <footer className="mt-6 border-t border-slate-200 px-4 text-sm text-slate-500">
           <div className="flex items-center justify-between">
             <span>{new Date().getFullYear()}, Jens Ochsenmeier</span>
             <div className="flex items-center">
               <a
-                className="cursor-pointer hover:text-slate-800 p-4"
+                className="cursor-pointer p-4 hover:text-slate-800"
                 href="https://www.linkedin.com/in/jens-ox"
                 target="_blank"
                 rel="noreferrer"
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <LinkedinIcon width={16} height={16} />
               </a>
               <a
-                className="cursor-pointer hover:text-slate-800 p-4"
+                className="cursor-pointer p-4 hover:text-slate-800"
                 href="https://github.com/jens-ox"
                 target="_blank"
                 rel="noreferrer"
