@@ -2,6 +2,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from 'lucide-react'
 import Link from 'next/link'
 import { Fragment } from 'react'
+import NavLink from './NavLink'
 
 const links = [
   {
@@ -37,9 +38,7 @@ export const NavBar = () => (
       </div>
       <div className="hidden md:flex md:space-x-10">
         {links.map((item) => (
-          <Link key={item.text} href={item.href}>
-            <span className="cursor-pointer font-medium text-slate-500 hover:text-slate-900">{item.text}</span>
-          </Link>
+          <NavLink key={item.text} href={item.href} text={item.text} />
         ))}
       </div>
     </nav>
@@ -54,7 +53,7 @@ export const NavBar = () => (
       leaveTo="opacity-0 scale-95"
     >
       <Popover.Panel focus className="absolute inset-x-0 top-0 z-10 origin-top-right p-2 transition md:hidden">
-        <div className="overflow-hidden rounded-lg bg-white p-4 shadow-md ring-1 ring-black ring-opacity-5">
+        <div className="overflow-hidden rounded-lg bg-white p-4 shadow-md ring-1 ring-black/5">
           <div className="flex items-center justify-end">
             <div>
               <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

@@ -9,6 +9,11 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+
+        {/* Verification links */}
+        <a rel="me" href="https://mastodon.social/@jens_ox" className="hidden">
+          Mastodon
+        </a>
       </Html>
     )
   }

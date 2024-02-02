@@ -15,19 +15,11 @@ const NavLink: React.FC<PropsWithChildren<NavLinkProps>> = ({ href, text, ...lin
   return (
     <Link
       href={href}
-      className={cx(
-        isActive ? 'bg-slate-900 text-white' : 'text-slate-300 hover:bg-slate-700 hover:text-white',
-        'rounded-md px-3 py-2 text-sm font-medium'
-      )}
+      className={cx(isActive ? 'underline text-slate-900' : 'text-slate-600 hover:text-slate-800')}
       aria-current={isActive ? 'page' : undefined}
       {...linkProps}
     >
-      <span className="font-bold opacity-0" aria-hidden={true}>
-        {text}
-      </span>
-      <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
-        <span className={cx(router.asPath === href ? 'font-bold' : 'font-normal')}>{text}</span>
-      </div>
+      {text}
     </Link>
   )
 }
