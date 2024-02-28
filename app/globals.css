@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scrollbar-gutter: stable;
+}
+
+html {
+  @apply bg-gray-50;  
+}
+
+.button {
+  @apply rounded w-40 flex items-center gap-5 px-4 py-1 border border-gray-200 hover:bg-gray-100 transform duration-150;
+}
+
+.nav-link {
+  @apply flex-1 text-center rounded py-2 hover:bg-gray-50;
+}
+
+.nav-link[data-active="true"] {
+  @apply cursor-default bg-gray-100 text-indigo-600;
+}
