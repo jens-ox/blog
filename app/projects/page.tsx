@@ -6,7 +6,7 @@ type Project = {
   title: string | ReactNode
   link: string
   alt?: string
-  description: string | ReactNode
+  description: ReactNode
   tools?: string[]
 }
 
@@ -147,9 +147,9 @@ export default () => {
               </a>
             </div>
           </div>
-          <p className="prose prose-sm dark:prose-invert">{p.description}</p>
+          <div className="prose prose-sm dark:prose-invert">{p.description}</div>
           {p.tools && p.tools.length > 0 ? (
-            <div className="text-xs flex gap-3">
+            <div className="text-xs flex flex-wrap gap-3">
               {p.tools?.map((t, j) => (
                 <span
                   className="rounded-full bg-gray-200 px-2 inline-block min-w-12 text-center"

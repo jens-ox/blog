@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(sans.variable, 'font-sans min-h-screen')}>
         <Contexts>
-          <main className="w-full max-w-7xl mx-auto py-12 px-6 grid grid-cols-3 gap-12">
+          <main className="w-full max-w-7xl mx-auto py-6 lg:py-12 px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="flex flex-col gap-5 pt-24">
               <div className="prose dark:prose-invert">
                 <h1>Hi!</h1>
@@ -39,7 +39,7 @@ export default function RootLayout({
                   decisions.
                 </p>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-row lg:flex-col flex-wrap gap-3">
                 <div>
                   <a href="https://github.com/jens-ox" target="_blank" className="button">
                     <GitHubLogoIcon /> <span>GitHub</span>

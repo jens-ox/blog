@@ -6,7 +6,7 @@ type Position = {
   title: string | ReactNode
   company: string | ReactNode
   dates: string
-  description: string | ReactNode
+  description: ReactNode
   tools?: string[]
 }
 
@@ -67,7 +67,11 @@ const positions: Position[] = [
   },
   {
     title: 'Data Engineering',
-    company: 'ArtiMinds Robotics',
+    company: (
+      <a href="https://www.artiminds.com/" target="_blank" className="underline">
+        ArtiMinds Robotics
+      </a>
+    ),
     dates: '2018 - 2020',
     description: (
       <>
@@ -92,7 +96,11 @@ const positions: Position[] = [
   },
   {
     title: 'Data Mining Intern',
-    company: 'Mercedes-Benz',
+    company: (
+      <a href="https://group.mercedes-benz.com/" target="_blank" className="underline">
+        Mercedes-Benz
+      </a>
+    ),
     dates: '2017 - 2018',
     description: (
       <>
@@ -109,7 +117,11 @@ const positions: Position[] = [
   },
   {
     title: 'Research Assistant',
-    company: 'Karlsruhe Institute of Technology (KIT)',
+    company: (
+      <a href="https://kit.edu" target="_blank" className="underline">
+        Karlsruhe Institute of Technology (KIT)
+      </a>
+    ),
     dates: '2015 - 2017',
     description: (
       <>
@@ -124,7 +136,11 @@ const positions: Position[] = [
   },
   {
     title: 'Bachelor of Science',
-    company: 'Karlsruhe Institute of Technology (KIT)',
+    company: (
+      <a href="https://kit.edu" target="_blank" className="underline">
+        Karlsruhe Institute of Technology (KIT)
+      </a>
+    ),
     dates: '2014 - 2018',
     description: (
       <ul>
@@ -138,7 +154,11 @@ const positions: Position[] = [
   },
   {
     title: 'Abitur',
-    company: 'Schickhardt-Gymnasium Herrenberg',
+    company: (
+      <a href="https://www.schickhardt.net/" target="_blank" className="underline">
+        Schickhardt-Gymnasium Herrenberg
+      </a>
+    ),
     dates: '2006 - 2014',
     description: (
       <ul>
@@ -164,7 +184,7 @@ export default () => {
           )}
         >
           <h2 className="font-bold text-lg">{p.title}</h2>
-          <div className="flex gap-8 text-sm text-gray-600">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-8 text-sm text-gray-600">
             <div className="flex items-center gap-2">
               <BackpackIcon />
               <span>{p.company}</span>
@@ -174,9 +194,9 @@ export default () => {
               <span>{p.dates}</span>
             </div>
           </div>
-          <p className="prose prose-sm dark:prose-invert">{p.description}</p>
+          <div className="prose prose-sm dark:prose-invert">{p.description}</div>
           {p.tools && p.tools.length > 0 ? (
-            <div className="text-xs flex gap-3">
+            <div className="text-xs flex flex-wrap gap-3">
               {p.tools?.map((t, j) => (
                 <span
                   className="rounded-full bg-gray-200 px-2 inline-block min-w-12 text-center"
