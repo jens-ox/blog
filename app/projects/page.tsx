@@ -123,7 +123,8 @@ const projects: Project[] = [
         visualization. I rewrote MetricsGraphics entirely while being on short-time work during the
         beginning of Covid.
       </>
-    )
+    ),
+    tools: ['TypeScript', 'D3']
   }
 ]
 

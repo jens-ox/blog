@@ -92,7 +92,8 @@ const positions: Position[] = [
           </li>
         </ul>
       </>
-    )
+    ),
+    tools: ['Express', 'Vue.js', 'TailwindCSS', 'Websockets', 'C++']
   },
   {
     title: 'Data Mining Intern',
@@ -113,7 +114,8 @@ const positions: Position[] = [
           <li>won first place at company-wide IT hackathon</li>
         </ul>
       </>
-    )
+    ),
+    tools: ['React', 'Express', 'Angular', 'R']
   },
   {
     title: 'Research Assistant',
@@ -132,7 +134,8 @@ const positions: Position[] = [
           <li>working with non-technical peers and users</li>
         </ul>
       </>
-    )
+    ),
+    tools: ['Vue.js', 'Semantic UI', 'R', 'PHP']
   },
   {
     title: 'Bachelor of Science',
