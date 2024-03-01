@@ -136,11 +136,11 @@ export default () => {
           key={`resume-entry-${i}`}
           className={clsx(
             'flex flex-col gap-2 pb-4',
-            i !== projects.length - 1 && 'border-b border-gray-200'
+            i !== projects.length - 1 && 'border-b border-gray-200 dark:border-gray-600'
           )}
         >
           <h2 className="font-bold text-lg">{p.title}</h2>
-          <div className="flex gap-8 text-sm text-gray-600">
+          <div className="flex gap-8 text-sm text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <Link2Icon />
               <a href={p.link} target="_blank" className="underline">
@@ -152,10 +152,7 @@ export default () => {
           {p.tools && p.tools.length > 0 ? (
             <div className="text-xs flex flex-wrap gap-3">
               {p.tools?.map((t, j) => (
-                <span
-                  className="rounded-full bg-gray-200 px-2 inline-block min-w-12 text-center"
-                  key={`entry-${i}-tool-${j}`}
-                >
+                <span className="pill" key={`entry-${i}-tool-${j}`}>
                   {t}
                 </span>
               ))}

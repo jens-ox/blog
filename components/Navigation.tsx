@@ -7,7 +7,7 @@ export const Navigation = () => {
   const pathname = usePathname()
 
   return (
-    <div className="flex gap-2 bg-white rounded-lg p-1 border border-gray-100">
+    <div className="flex gap-2 bg-white dark:bg-gray-100/10 rounded-lg p-1 border border-gray-100 dark:border-gray-100/50">
       <Link href="/" className="nav-link" data-active={pathname === '/'}>
         Resume
       </Link>
