@@ -8,11 +8,13 @@ type Project = {
   alt?: string
   description: ReactNode
   tools?: string[]
+  inDev?: boolean
 }
 
 const projects: Project[] = [
   {
     title: 'Munigrid',
+    inDev: true,
     link: 'https://munigrid.de',
     description: (
       <>
@@ -34,6 +36,7 @@ const projects: Project[] = [
   },
   {
     title: 'Georanker',
+    inDev: true,
     link: 'https://georanker.de',
     description: (
       <>
@@ -139,7 +142,14 @@ export default () => {
             i !== projects.length - 1 && 'border-b border-gray-200 dark:border-gray-600'
           )}
         >
-          <h2 className="font-bold text-lg">{p.title}</h2>
+          <div className="flex items-center gap-5">
+            <h2 className="font-bold text-lg">{p.title}</h2>
+            {p.inDev ? (
+              <span className="text-xs bg-orange-400/50 px-2 rounded-full text-orange-900">
+                in development
+              </span>
+            ) : null}
+          </div>
           <div className="flex gap-8 text-sm text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <Link2Icon />
