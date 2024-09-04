@@ -29,10 +29,22 @@ const projects: Project[] = [
       'TailwindCSS',
       'Radix UI',
       'TypeScript',
-      'AWS',
-      'GitHub Actions',
-      'Planetscale'
+      'Cloudflare R2',
+      'PostgreSQL',
+      'GitHub Actions'
     ]
+  },
+  {
+    title: 'Open Data Aggregator',
+    inDev: false,
+    link: 'https://krake.dev',
+    description: (
+      <>
+        Open Data Aggregator is a plattform that aggregates different publicly accessible data
+        sources, adds schemas, versions the data and makes it accessible via a well-documented API.
+      </>
+    ),
+    tools: ['Next.js', 'TailwindCSS', 'Radix UI', 'TypeScript', 'GitHub Actions']
   },
   {
     title: 'Georanker',
