@@ -157,7 +157,7 @@ export default () => {
           <div className="flex items-center gap-5">
             <h2 className="font-bold text-lg">{p.title}</h2>
             {p.inDev ? (
-              <span className="text-xs bg-orange-400/50 px-2 rounded-full text-orange-900">
+              <span className="text-xs bg-orange-400/50 px-2 rounded-full text-orange-900 dark:text-orange-200">
                 in development
               </span>
             ) : null}
