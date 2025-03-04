@@ -17,10 +17,11 @@ const projects: Project[] = [
     link: 'https://munigrid.de',
     description: (
       <>
-        Munigrid is a data management and sharing platform for Germany's public sector which I'm
-        developing together with the city of Herrenberg, where I'm doing voluntary work to help with
-        digitalization. It allows municipalities and other bodies of the public sector to securely
-        share data internally, with external partners and publish datasets as Open Data.
+        Munigrid is a data management and sharing platform for Germany&apos;s public sector which
+        I&apos;m developing together with the city of Herrenberg, where I&apos;m doing voluntary
+        work to help with digitalization. It allows municipalities and other bodies of the public
+        sector to securely share data internally, with external partners and publish datasets as
+        Open Data.
       </>
     ),
     tools: [
@@ -100,11 +101,15 @@ const projects: Project[] = [
       <>
         <p>
           Most code duplication detection uses the{' '}
-          <a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm" target="_blank">
+          <a
+            href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm"
+            target="_blank"
+            rel="noreferrer"
+          >
             Rabin-Karp algorithm
           </a>{' '}
-          to detect duplication, which only works with identical code - it can't find structural
-          duplication or duplication where symbols have been renamed.
+          to detect duplication, which only works with identical code - it can&apos;t find
+          structural duplication or duplication where symbols have been renamed.
         </p>
         <p>
           Simstruct uses methods originally suggested by{' '}
@@ -122,8 +127,9 @@ const projects: Project[] = [
     link: 'https://cll-web.vercel.app/',
     description: (
       <>
-        I've often seen teams struggling with setting up proper React component sharing across their
-        UIs. The component library library is a showcase of different component sharing setups.
+        I&apos;ve often seen teams struggling with setting up proper React component sharing across
+        their UIs. The component library library is a showcase of different component sharing
+        setups.
       </>
     ),
     tools: ['React', 'Vite', 'TailwindCSS', 'Material UI', 'TypeScript']
@@ -142,7 +148,7 @@ const projects: Project[] = [
   }
 ]
 
-export default () => {
+export default function ProjectsPage() {
   return (
     <div className="flex flex-col gap-4">
       {projects.map((p, i) => (
@@ -164,7 +170,7 @@ export default () => {
           <div className="flex gap-8 text-sm text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <Link2Icon />
-              <a href={p.link} target="_blank" className="underline">
+              <a href={p.link} target="_blank" className="underline" rel="noreferrer">
                 {p.link}
               </a>
             </div>

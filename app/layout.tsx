@@ -3,7 +3,6 @@ import { Atkinson_Hyperlegible } from 'next/font/google'
 import './globals.css'
 import { clsx } from 'clsx'
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
-import { Contexts } from '@/components/Contexts'
 import { Navigation } from '@/components/Navigation'
 
 export const metadata: Metadata = {
@@ -28,41 +27,49 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(sans.variable, 'font-sans min-h-screen')}>
-        <Contexts>
-          <main className="w-full max-w-7xl mx-auto py-6 lg:py-12 px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="flex flex-col gap-5 pt-24">
-              <div className="prose dark:prose-invert">
-                <h1>Hi!</h1>
-                <p>
-                  I'm Jens Ochsenmeier. I (enable teams to) build high-quality fullstack
-                  applications that turn machine learning models into actionable insights and
-                  decisions.
-                </p>
+        <main className="w-full max-w-7xl mx-auto py-6 lg:py-12 px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="flex flex-col gap-5 pt-24">
+            <div className="prose dark:prose-invert">
+              <h1>Hi!</h1>
+              <p>
+                I&apos;m Jens Ochsenmeier. I (enable teams to) build high-quality fullstack
+                applications that turn machine learning models into actionable insights and
+                decisions.
+              </p>
+            </div>
+            <div className="flex flex-row lg:flex-col flex-wrap gap-3">
+              <div>
+                <a
+                  href="https://github.com/jens-ox"
+                  target="_blank"
+                  className="button"
+                  rel="noreferrer"
+                >
+                  <GitHubLogoIcon /> <span>GitHub</span>
+                </a>
               </div>
-              <div className="flex flex-row lg:flex-col flex-wrap gap-3">
-                <div>
-                  <a href="https://github.com/jens-ox" target="_blank" className="button">
-                    <GitHubLogoIcon /> <span>GitHub</span>
-                  </a>
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/jens-ox/" target="_blank" className="button">
-                    <LinkedInLogoIcon /> <span>LinkedIn</span>
-                  </a>
-                </div>
-                <div>
-                  <a href="mailto:hi@jens-ox.de" className="button">
-                    <EnvelopeClosedIcon /> <span>Mail</span>
-                  </a>
-                </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/jens-ox/"
+                  target="_blank"
+                  className="button"
+                  rel="noreferrer"
+                >
+                  <LinkedInLogoIcon /> <span>LinkedIn</span>
+                </a>
+              </div>
+              <div>
+                <a href="mailto:hi@jens-ox.de" className="button">
+                  <EnvelopeClosedIcon /> <span>Mail</span>
+                </a>
               </div>
             </div>
-            <div className="col-span-2 flex flex-col gap-12">
-              <Navigation />
-              <div>{children}</div>
-            </div>
-          </main>
-        </Contexts>
+          </div>
+          <div className="col-span-2 flex flex-col gap-12">
+            <Navigation />
+            <div>{children}</div>
+          </div>
+        </main>
       </body>
     </html>
   )

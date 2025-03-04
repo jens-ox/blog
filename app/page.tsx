@@ -14,7 +14,7 @@ const positions: Position[] = [
   {
     title: 'Fullstack Engineering Lead',
     company: (
-      <a href="https://quantco.com" className="underline" target="_blank">
+      <a href="https://quantco.com" className="underline" target="_blank" rel="noreferrer">
         QuantCo
       </a>
     ),
@@ -30,7 +30,7 @@ const positions: Position[] = [
           <li>leading the Fullstack Engineering team</li>
           <li>hiring and onboarding new team members</li>
         </ul>
-        We're currently 4 FTEs and manage all UIs across products and projects at QuantCo.
+        We&apos;re currently 4 FTEs and manage all UIs across products and projects at QuantCo.
       </>
     ),
     tools: ['Next.js', 'TailwindCSS', 'Radix UI', 'TypeScript', 'GCP', 'GitHub Actions']
@@ -38,7 +38,7 @@ const positions: Position[] = [
   {
     title: 'Senior Software Engineer',
     company: (
-      <a href="https://blueyonder.com/" target="_blank" className="underline">
+      <a href="https://blueyonder.com/" target="_blank" className="underline" rel="noreferrer">
         Blue Yonder
       </a>
     ),
@@ -68,16 +68,16 @@ const positions: Position[] = [
   {
     title: 'Data Engineering',
     company: (
-      <a href="https://www.artiminds.com/" target="_blank" className="underline">
+      <a href="https://www.artiminds.com/" target="_blank" className="underline" rel="noreferrer">
         ArtiMinds Robotics
       </a>
     ),
     dates: '2018 - 2020',
     description: (
       <>
-        As part of my Bachelor's Thesis on analytics of real-time robot data, I wrote a web-based
-        solution for robot-first production optimization. I continued working on it after finishing
-        my Bachelor's degree, onboarding colleagues onto it.
+        As part of my Bachelor&apos;s Thesis on analytics of real-time robot data, I wrote a
+        web-based solution for robot-first production optimization. I continued working on it after
+        finishing my Bachelor&apos;s degree, onboarding colleagues onto it.
         <ul>
           <li>
             scaling up development operations from a few students to multiple full-time employees
@@ -98,7 +98,12 @@ const positions: Position[] = [
   {
     title: 'Data Mining Intern',
     company: (
-      <a href="https://group.mercedes-benz.com/" target="_blank" className="underline">
+      <a
+        href="https://group.mercedes-benz.com/"
+        target="_blank"
+        className="underline"
+        rel="noreferrer"
+      >
         Mercedes-Benz
       </a>
     ),
@@ -120,7 +125,7 @@ const positions: Position[] = [
   {
     title: 'Research Assistant',
     company: (
-      <a href="https://kit.edu" target="_blank" className="underline">
+      <a href="https://kit.edu" target="_blank" className="underline" rel="noreferrer">
         Karlsruhe Institute of Technology (KIT)
       </a>
     ),
@@ -140,7 +145,7 @@ const positions: Position[] = [
   {
     title: 'Bachelor of Science',
     company: (
-      <a href="https://kit.edu" target="_blank" className="underline">
+      <a href="https://kit.edu" target="_blank" className="underline" rel="noreferrer">
         Karlsruhe Institute of Technology (KIT)
       </a>
     ),
@@ -158,7 +163,7 @@ const positions: Position[] = [
   {
     title: 'Abitur',
     company: (
-      <a href="https://www.schickhardt.net/" target="_blank" className="underline">
+      <a href="https://www.schickhardt.net/" target="_blank" className="underline" rel="noreferrer">
         Schickhardt-Gymnasium Herrenberg
       </a>
     ),
@@ -175,7 +180,7 @@ const positions: Position[] = [
   }
 ]
 
-export default () => {
+export default function MainPage() {
   return (
     <div className="flex flex-col gap-4">
       {positions.map((p, i) => (
