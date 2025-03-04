@@ -10,17 +10,25 @@ html {
 }
 
 .button {
-  @apply rounded w-40 flex items-center gap-5 px-4 py-1 border border-gray-200 dark:border-gray-200/50 hover:bg-gray-100 dark:hover:bg-gray-100/10 transform duration-150;
+  @apply rounded w-40 flex items-center gap-5 px-4 py-1 border border-gray-200 dark:border-gray-200/25 hover:bg-gray-100 dark:hover:bg-gray-100/10 transform duration-150;
 }
 
 .nav-link {
-  @apply flex-1 text-center rounded py-2 hover:bg-gray-50 dark:hover:bg-gray-50/10;
+  @apply flex-1 text-center rounded py-2 hover:bg-gray-50 dark:hover:bg-gray-50/10 transition duration-150;
 }
 
 .nav-link[data-active='true'] {
-  @apply cursor-default bg-gray-100 text-indigo-600;
+  @apply cursor-default bg-gray-100 dark:bg-gray-100/20 text-emerald-700 dark:text-emerald-400;
 }
 
 .pill {
-  @apply rounded-full bg-gray-200 dark:bg-gray-200/10 px-2 inline-block min-w-12 text-center text-xs;
+  @apply rounded-full bg-gray-200 dark:bg-gray-200/10 text-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-300/20 px-2 inline-block min-w-12 text-center text-xs;
+}
+
+a {
+  @apply rounded-sm;
+}
+
+a:focus-visible {
+  @apply outline-none ring-1 ring-emerald-700 dark:ring-emerald-400;
 }
