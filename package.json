@@ -24,6 +24,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
     "jiti": "^2.4.2",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
