@@ -14,7 +14,6 @@ type Project = {
 const projects: Project[] = [
   {
     title: 'Munigrid',
-    inDev: true,
     link: 'https://munigrid.de',
     description: (
       <>
