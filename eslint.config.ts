@@ -1,11 +1,12 @@
 import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
-import globals from 'globals'
+import { defineConfig } from 'eslint/config'
 import reactPlugin from 'eslint-plugin-react'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
-const config = tseslint.config(
+const config = defineConfig(
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   {
     ignores: ['node_modules/*', '.next/*']
   },
@@ -46,10 +47,7 @@ const config = tseslint.config(
   },
   {
     rules: {
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
-      ]
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }]
     }
   }
 )

@@ -45,8 +45,8 @@ const positions: Position[] = [
     dates: '2020 - 2022',
     description: (
       <>
-        At Blue Yonder, I primarily worked on LDE, a product for supply chain forecasting. I was
-        responsible for a full re-write of its UI.
+        At Blue Yonder, I primarily worked on LDE, a product for supply chain forecasting. I was responsible for a full
+        re-write of its UI.
         <ul>
           <li>leading full-stack codebase modernization efforts</li>
           <li>giving company-wide talks on best practices</li>
@@ -54,16 +54,7 @@ const positions: Position[] = [
         </ul>
       </>
     ),
-    tools: [
-      'React',
-      'Vite',
-      'Fastify',
-      'Material UI',
-      'Azure',
-      'Snowflake',
-      'GitHub Actions',
-      'Jenkins'
-    ]
+    tools: ['React', 'Vite', 'Fastify', 'Material UI', 'Azure', 'Snowflake', 'GitHub Actions', 'Jenkins']
   },
   {
     title: 'Data Engineering',
@@ -75,21 +66,13 @@ const positions: Position[] = [
     dates: '2018 - 2020',
     description: (
       <>
-        As part of my Bachelor&apos;s Thesis on analytics of real-time robot data, I wrote a
-        web-based solution for robot-first production optimization. I continued working on it after
-        finishing my Bachelor&apos;s degree, onboarding colleagues onto it.
+        As part of my Bachelor&apos;s Thesis on analytics of real-time robot data, I wrote a web-based solution for
+        robot-first production optimization. I continued working on it after finishing my Bachelor&apos;s degree,
+        onboarding colleagues onto it.
         <ul>
-          <li>
-            scaling up development operations from a few students to multiple full-time employees
-          </li>
-          <li>
-            creating and managing modern development and review processes in a Scrum-based
-            environment
-          </li>
-          <li>
-            implementing state-of-the-art solutions for production optimization in industrial
-            robotics
-          </li>
+          <li>scaling up development operations from a few students to multiple full-time employees</li>
+          <li>creating and managing modern development and review processes in a Scrum-based environment</li>
+          <li>implementing state-of-the-art solutions for production optimization in industrial robotics</li>
         </ul>
       </>
     ),
@@ -98,24 +81,17 @@ const positions: Position[] = [
   {
     title: 'Data Mining Intern',
     company: (
-      <a
-        href="https://group.mercedes-benz.com/"
-        target="_blank"
-        className="underline"
-        rel="noreferrer"
-      >
+      <a href="https://group.mercedes-benz.com/" target="_blank" className="underline" rel="noreferrer">
         Mercedes-Benz
       </a>
     ),
     dates: '2017 - 2018',
     description: (
       <>
-        At Mercedes-Benz, I worked as part of the Digital Factory Lab on building production-grade
-        prototype solutions for production optimization and control.
+        At Mercedes-Benz, I worked as part of the Digital Factory Lab on building production-grade prototype solutions
+        for production optimization and control.
         <ul>
-          <li>
-            designing and developing mobile-first early-stage solutions for production control
-          </li>
+          <li>designing and developing mobile-first early-stage solutions for production control</li>
           <li>won first place at company-wide IT hackathon</li>
         </ul>
       </>
@@ -132,8 +108,8 @@ const positions: Position[] = [
     dates: '2015 - 2017',
     description: (
       <>
-        I was hired by the Institute of Rock and Soil Mechanics at KIT to help modernize their
-        web-based solution for automated rock sample analysis.
+        I was hired by the Institute of Rock and Soil Mechanics at KIT to help modernize their web-based solution for
+        automated rock sample analysis.
         <ul>
           <li>incremental modernization of a large legacy codebase</li>
           <li>working with non-technical peers and users</li>
@@ -154,8 +130,8 @@ const positions: Position[] = [
       <ul>
         <li>Minor in Mathematics</li>
         <li>
-          Thesis: Framework for predictive and prescriptive analytics of real-time robot data in
-          modern production environments, grade 1.0
+          Thesis: Framework for predictive and prescriptive analytics of real-time robot data in modern production
+          environments, grade 1.0
         </li>
       </ul>
     )
@@ -172,8 +148,8 @@ const positions: Position[] = [
       <ul>
         <li>Mathematics Award for remarkable accomplishments in Mathematics</li>
         <li>
-          Participated in math competitions (1st place Math Competition of University of Tübingen,
-          2nd place Math Competition of University of Stuttgart)
+          Participated in math competitions (1st place Math Competition of University of Tübingen, 2nd place Math
+          Competition of University of Stuttgart)
         </li>
       </ul>
     )

@@ -3,6 +3,7 @@
 
 :root {
   scrollbar-gutter: stable;
+  font-family: var(--font-sans);
 }
 
 html {

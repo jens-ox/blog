@@ -17,22 +17,13 @@ const projects: Project[] = [
     link: 'https://munigrid.de',
     description: (
       <>
-        Munigrid is a data management and sharing platform for Germany&apos;s public sector which
-        I&apos;m developing together with the city of Herrenberg, where I&apos;m doing voluntary
-        work to help with digitalization. It allows municipalities and other bodies of the public
-        sector to securely share data internally, with external partners and publish datasets as
-        Open Data.
+        Munigrid is a data management and sharing platform for Germany&apos;s public sector which I&apos;m developing
+        together with the city of Herrenberg, where I&apos;m doing voluntary work to help with digitalization. It allows
+        municipalities and other bodies of the public sector to securely share data internally, with external partners
+        and publish datasets as Open Data.
       </>
     ),
-    tools: [
-      'Next.js',
-      'TailwindCSS',
-      'Radix UI',
-      'TypeScript',
-      'Cloudflare R2',
-      'PostgreSQL',
-      'GitHub Actions'
-    ]
+    tools: ['Next.js', 'TailwindCSS', 'Radix UI', 'TypeScript', 'Cloudflare R2', 'PostgreSQL', 'GitHub Actions']
   },
   {
     title: 'Open Data Aggregator',
@@ -40,8 +31,8 @@ const projects: Project[] = [
     link: 'https://krake.dev',
     description: (
       <>
-        Open Data Aggregator is a plattform that aggregates different publicly accessible data
-        sources, adds schemas, versions the data and makes it accessible via a well-documented API.
+        Open Data Aggregator is a plattform that aggregates different publicly accessible data sources, adds schemas,
+        versions the data and makes it accessible via a well-documented API.
       </>
     ),
     tools: ['Next.js', 'TailwindCSS', 'Radix UI', 'TypeScript', 'GitHub Actions']
@@ -53,15 +44,11 @@ const projects: Project[] = [
     description: (
       <>
         <p>
-          I built Georanker as part of my search for a great place to live in Germany. It allows
-          users to specify factors important to them and ranks every hectare of living space in
-          Germany against those factors. For that, it uses publicly available data like noise maps
-          and geographical data of forests and other points of interest.
+          I built Georanker as part of my search for a great place to live in Germany. It allows users to specify
+          factors important to them and ranks every hectare of living space in Germany against those factors. For that,
+          it uses publicly available data like noise maps and geographical data of forests and other points of interest.
         </p>
-        <p>
-          To achieve good performance, the compute backend has been written in fully-parallelized
-          Rust.
-        </p>
+        <p>To achieve good performance, the compute backend has been written in fully-parallelized Rust.</p>
       </>
     ),
     tools: ['Next.js', 'TailwindCSS', 'TypeScript', 'PostGIS', 'Rust', 'QGIS']
@@ -72,12 +59,12 @@ const projects: Project[] = [
     description: (
       <>
         <p>
-          NiiVue is a WebGL-based medical image viewer mainly developed by the Neuroscience
-          department of the University of Oxford.
+          NiiVue is a WebGL-based medical image viewer mainly developed by the Neuroscience department of the University
+          of Oxford.
         </p>
         <p>
-          I helped with different aspects of code modernization, which included porting the whole
-          core library to TypeScript.
+          I helped with different aspects of code modernization, which included porting the whole core library to
+          TypeScript.
         </p>
       </>
     ),
@@ -88,9 +75,8 @@ const projects: Project[] = [
     link: 'https://www.open-data-kommunal.de/',
     description: (
       <>
-        To help facilitate the publishing of datasets as Open Data in my voluntary work at the city
-        of Herrenberg, I wrote some guidelines on the ideas and principles of Open Data and how they
-        can be applied by municipalities.
+        To help facilitate the publishing of datasets as Open Data in my voluntary work at the city of Herrenberg, I
+        wrote some guidelines on the ideas and principles of Open Data and how they can be applied by municipalities.
       </>
     )
   },
@@ -101,22 +87,16 @@ const projects: Project[] = [
       <>
         <p>
           Most code duplication detection uses the{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm" target="_blank" rel="noreferrer">
             Rabin-Karp algorithm
           </a>{' '}
-          to detect duplication, which only works with identical code - it can&apos;t find
-          structural duplication or duplication where symbols have been renamed.
+          to detect duplication, which only works with identical code - it can&apos;t find structural duplication or
+          duplication where symbols have been renamed.
         </p>
         <p>
           Simstruct uses methods originally suggested by{' '}
-          <a href="https://www.semanticdesigns.com/Company/Publications/ICSM98.pdf">
-            Baxter et al.
-          </a>{' '}
-          by searching for identical subtrees in abstract syntax trees.
+          <a href="https://www.semanticdesigns.com/Company/Publications/ICSM98.pdf">Baxter et al.</a> by searching for
+          identical subtrees in abstract syntax trees.
         </p>
       </>
     ),
@@ -127,9 +107,8 @@ const projects: Project[] = [
     link: 'https://cll-web.vercel.app/',
     description: (
       <>
-        I&apos;ve often seen teams struggling with setting up proper React component sharing across
-        their UIs. The component library library is a showcase of different component sharing
-        setups.
+        I&apos;ve often seen teams struggling with setting up proper React component sharing across their UIs. The
+        component library library is a showcase of different component sharing setups.
       </>
     ),
     tools: ['React', 'Vite', 'TailwindCSS', 'Material UI', 'TypeScript']
@@ -139,9 +118,8 @@ const projects: Project[] = [
     link: 'https://metricsgraphicsjs.org/',
     description: (
       <>
-        Originally developed at Mozilla, MetricsGraphics is a charting library for time series
-        visualization. I rewrote MetricsGraphics entirely while being on short-time work during the
-        beginning of Covid.
+        Originally developed at Mozilla, MetricsGraphics is a charting library for time series visualization. I rewrote
+        MetricsGraphics entirely while being on short-time work during the beginning of Covid.
       </>
     ),
     tools: ['TypeScript', 'D3']

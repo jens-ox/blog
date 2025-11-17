@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Atkinson_Hyperlegible } from 'next/font/google'
 import './globals.css'
-import { clsx } from 'clsx'
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { clsx } from 'clsx'
 import Image from 'next/image'
 import { Contexts } from '@/components/Contexts'
 import { Navigation } from '@/components/Navigation'
@@ -53,18 +53,13 @@ export default function RootLayout({
                       .
                     </p>
                     <p>
-                      I (enable teams to) build high-quality fullstack applications that turn
-                      machine learning models into actionable insights and decisions.
+                      I (enable teams to) build high-quality fullstack applications that turn machine learning models
+                      into actionable insights and decisions.
                     </p>
                   </div>
                   <div className="flex flex-row lg:flex-col flex-wrap gap-3 print:hidden">
                     <div>
-                      <a
-                        href="https://github.com/jens-ox"
-                        target="_blank"
-                        className="button"
-                        rel="noreferrer"
-                      >
+                      <a href="https://github.com/jens-ox" target="_blank" className="button" rel="noreferrer">
                         <GitHubLogoIcon /> <span>GitHub</span>
                       </a>
                     </div>
